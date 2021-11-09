@@ -1,0 +1,167 @@
+body {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: #414149;
+    z-index: +1;
+    display: inline-flex;
+    justify-content: center;
+    position: absolute;
+}
+
+.launch_page {
+    background-image: url("../img/dsds.png");
+    display: flex;
+    flex-direction: column;
+    vertical-align: auto;
+    align-items: center;
+    justify-content: center;
+    height: 800px;
+    width: 450px;
+    background-color: khaki;
+}
+
+img.menu_title {
+    height: 80px;
+    width: 300px;
+    margin-bottom: 150px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #FFED66;
+    padding: 15px 40px;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 30px;
+    font-family: "Abel", sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FF5E5B;
+    box-shadow: 0 3px 0 #FF5E5B;
+    cursor: pointer;
+    transition: all 100ms linear;
+}
+
+.btn:hover {
+    -moz-transform: translateY(-4px);
+    -o-transform: translateY(-4px);
+    -ms-transform: translateY(-4px);
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+    box-shadow: 0 7px 0 #FF5E5B;
+}
+
+.btn:active {
+    -moz-transform: translateY(4px);
+    -o-transform: translateY(4px);
+    -ms-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+    box-shadow: 0 3px 0 #FF5E5B;
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+.game {
+    background-color: lightblue;
+    width: 450px;
+    height: 800px;
+    position: relative;
+    display: none;
+}
+
+.gameOverPage {
+    display: none;
+    flex-direction: column;
+    vertical-align: auto;
+    align-items: center;
+    justify-content: center;
+    height: 800px;
+    width: 450px;
+    background-image: url("../img/dsds.png");
+}
+
+.bird {
+    height: 60px;
+    width: 80px;
+    background-image: url("../img/flappy-bird.png");
+    position: absolute;
+    visibility: hidden;
+    border-color: #FF5E5B;
+    border-width: 2px;
+}
+
+.fly_zone {
+    background-image: url("../img/bbb.png");
+    width: 450px;
+    height: 640px;
+    position: absolute;
+}
+
+.ground {
+    background-image: url("../img/bottom-background.png");
+    width: 450px;
+    height: 160px;
+    position: absolute;
+    top: 640px;
+    z-index: +2;
+}
+
+.pipe {
+    background-image: url("../img/flappybird-pipe.png");
+    width: 90px;
+    height: 300px;
+    position: absolute;
+}
+
+.UPpipe {
+    background-image: url("../img/flappybird-pipe.png");
+    transform: rotate(180deg);
+    width: 90px;
+    height: 300px;
+    position: absolute;
+}
+
+.leftZone {
+    width: 300px;
+    height: 800px;
+    border-width: thick;
+    border-color: #eeeeff;
+    background-color: #414149;
+    z-index: +1;
+}
+
+.sideZone {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    width: 300px;
+    height: 800px;
+    border-width: thick;
+    border-color: #eeeeff;
+    background-color: #414149;
+    color: #d4d1da;
+    z-index: +1;
+}
+
+input {
+    margin-left: 30px;
+}
+
+.debug {
+    display: none;
+    flex-direction: column;
+    color: #eeeeff;
+}
+
+.stat_block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
